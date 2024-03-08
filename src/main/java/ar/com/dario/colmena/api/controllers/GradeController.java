@@ -10,7 +10,6 @@ import ar.com.dario.colmena.api.services.ProfessorServiceImpl;
 import ar.com.dario.colmena.api.services.StudentServiceImpl;
 
 import java.util.HashSet;
-import java.util.logging.Logger;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ public class GradeController extends BaseControllerImpl<Grade, GradeServiceImpl>
     @Autowired
     StudentServiceImpl studentService;
 
-    private static final Logger logger = Logger.getLogger(GradeController.class.getName());
+    //private static final Logger logger = Logger.getLogger(GradeController.class.getName());
 
     private Long parseId(String id) throws IllegalArgumentException {
         try {
